@@ -1,3 +1,10 @@
-2017-11-15
+2017-11-16
+==========
 
-Insertion Sort took 30 min
+Big O notation: 20m
+Binary search: 30m
+
+2017-11-15
+==========
+
+Insertion sort: 30 min

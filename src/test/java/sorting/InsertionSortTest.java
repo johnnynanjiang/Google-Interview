@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * Created by nanjiang on 15/11/17.
  */
-public class InsertionSortUnitTest {
+public class InsertionSortTest {
     @Test
     public void testInsertionSort() {
         int[] array = {5, 4, 6, 7, 1, 2, 3};
