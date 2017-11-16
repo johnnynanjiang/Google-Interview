@@ -10,11 +10,22 @@ import java.util.Arrays;
  */
 public class InsertionSortTest {
     @Test
-    public void testInsertionSort() {
+    public void testInsertionSortUp() {
         int[] array = {5, 4, 6, 7, 1, 2, 3};
 
-        int[] result = InsertionSort.sort(array);
+        assertEquals(
+                "[1, 2, 3, 4, 5, 6, 7]",
+                Arrays.toString(InsertionSort.sortUp(array))
+        );
+    }
 
-        assertEquals("[1, 2, 3, 4, 5, 6, 7]", Arrays.toString(result));
+    @Test
+    public void testInsertionSortDown() {
+        int[] array = {5, 4, 6, 7, 1, 2, 3};
+
+        assertEquals(
+                "[7, 6, 5, 4, 3, 2, 1]",
+                Arrays.toString(InsertionSort.sortDown(array))
+        );
     }
 }
