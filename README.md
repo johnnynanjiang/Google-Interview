@@ -1,6 +1,8 @@
+Bubble sort:    40m
+
 Multi-thread:   30m
 
-Big O notation: 20m
+Big O notation: 60m
 
 Binary search:  30m
 
