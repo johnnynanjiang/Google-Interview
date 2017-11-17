@@ -1,6 +1,7 @@
-package sorting;
+package search;
 
 import org.junit.Test;
+import search.BinarySearch;
 
 import static org.junit.Assert.*;
 

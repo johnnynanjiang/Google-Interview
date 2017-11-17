@@ -1,4 +1,4 @@
-package sorting;
+package search;
 
 import util.ArrayHelper;
 
