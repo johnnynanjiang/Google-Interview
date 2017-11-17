@@ -1,10 +1,7 @@
-2017-11-16
-==========
+Multi-thread:   30m
 
 Big O notation: 20m
-Binary search: 30m
 
-2017-11-15
-==========
+Binary search:  30m
 
-Insertion sort: 30 min
+Insertion sort: 30m
