@@ -1,3 +1,5 @@
+Merge sort:     180m
+
 Bubble sort:    40m
 
 Multi-thread:   30m
