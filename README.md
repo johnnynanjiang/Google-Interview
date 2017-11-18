@@ -2,7 +2,7 @@ Merge sort:     180m
 
 Bubble sort:    40m
 
-Multi-thread:   30m
+Multi-thread:   90m
 
 Big O notation: 60m
 
