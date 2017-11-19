@@ -1,6 +1,5 @@
 package sorting;
 
-import fixture.Fixtures;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -14,8 +13,8 @@ public class BubbleSortTest {
     @Test
     public void testBubbleSortUp() {
         assertEquals(
-                Fixtures.RESULT_OF_SORT_UP,
-                Arrays.toString(BubbleSort.sortUp(Fixtures.ARRAY_TO_SORT))
+                "[1, 2, 3, 4, 5, 6, 7]",
+                Arrays.toString(BubbleSort.sortUp(new int[]{5, 4, 6, 7, 1, 2, 3}))
         );
     }
 }
