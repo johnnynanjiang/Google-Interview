@@ -8,6 +8,7 @@ import java.util.Arrays;
  * Created by nanjiang on 18/11/17.
  */
 
+//ToDo it is crap, need to come up with a much better solution
 public class MergeSort {
     public static int[] sortUp(int[] array) {
         Range range = new Range(0, array.length - 1);

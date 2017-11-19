@@ -1,11 +1,13 @@
-Merge sort:     180m
+Selection sort:     30m
 
-Bubble sort:    40m
+Merge sort:         180m
 
-Multi-thread:   90m
+Bubble sort:        40m
 
-Big O notation: 60m
+Multi-thread:       90m
 
-Binary search:  30m
+Big O notation:     60m
 
-Insertion sort: 30m
+Binary search:      30m
+
+Insertion sort:     30m
