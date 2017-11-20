@@ -1,6 +1,9 @@
 package sorting;
 
+import com.sun.org.apache.bcel.internal.generic.Select;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import util.BaseTest;
 
 import java.util.Arrays;
 
@@ -9,14 +12,17 @@ import static org.junit.Assert.*;
 /**
  * Created by nanjiang on 19/11/17.
  */
-public class SelectionSortTest {
+public class SelectionSortTest extends BaseTest {
+    @Autowired
+    SelectionSort selectionSort;
+
     @Test
     public void testSortUp() {
         int[] arrayToSort = new int[] {7, 6 , 5, 4, 3, 1, 2};
 
         assertEquals(
                 "[1, 2, 3, 4, 5, 6, 7]",
-                Arrays.toString(SelectionSort.sortUp(arrayToSort))
+                Arrays.toString(selectionSort.sortUp(arrayToSort))
         );
     }
 
@@ -26,7 +32,7 @@ public class SelectionSortTest {
 
         assertEquals(
                 "[7, 7, 6, 5, 4, 3, 2, 1, 0, -1]",
-                Arrays.toString(SelectionSort.sortDown(arrayToSort))
+                Arrays.toString(selectionSort.sortDown(arrayToSort))
         );
     }
 }

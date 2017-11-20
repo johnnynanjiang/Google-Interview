@@ -1,5 +1,7 @@
 package sorting;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import util.ArrayHelper;
 
 import java.util.Arrays;
@@ -9,15 +11,19 @@ import java.util.Arrays;
  */
 
 //ToDo it is crap, need to come up with a much better solution
+@Component
 public class MergeSort {
-    public static int[] sortUp(int[] array) {
+    @Autowired
+    ArrayHelper arrayHelper;
+
+    public int[] sortUp(int[] array) {
         Range range = new Range(0, array.length - 1);
         divideAndConquer(array, range);
         return array;
     }
 
-    static Range divideAndConquer(int[] array, Range range) {
-        ArrayHelper.print(array);
+    Range divideAndConquer(int[] array, Range range) {
+        arrayHelper.print(array);
         System.out.println(String.format("%d, %d", range.start, range.end));
 
         Range[] ranges = divide(range);
@@ -35,7 +41,7 @@ public class MergeSort {
         return conquer(array, ranges[0], ranges[1]);
     }
 
-    public static Range[] divide(Range range) {
+    public Range[] divide(Range range) {
         if (range.start == range.end) return null;
 
         int start = range.start;
@@ -50,7 +56,7 @@ public class MergeSort {
         return ranges;
     }
 
-    public static Range conquer(int[] array, Range range0, Range range1) {
+    public Range conquer(int[] array, Range range0, Range range1) {
         int[] arrayNew = new int[range0.getSize() + range1.getSize()];
         int i = 0;
 

@@ -1,15 +1,22 @@
 package sorting;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import util.ArrayHelper;
 
 /**
  * Created by nanjiang on 17/11/17.
  */
+
+@Component
 public class BubbleSort {
-    public static int[] sortUp(int[] array) {
+    @Autowired
+    ArrayHelper arrayHelper;
+
+    public int[] sortUp(int[] array) {
         if ((array == null ) || (array.length == 0)) return array;
 
-        ArrayHelper.print(array);
+        arrayHelper.print(array);
 
         for (int i = 0; i < array.length; i++) {
             boolean allSorted = true;
@@ -23,7 +30,7 @@ public class BubbleSort {
                     allSorted = false;
                 }
 
-                ArrayHelper.print(array);
+                arrayHelper.print(array);
             }
 
             if (allSorted) return array;

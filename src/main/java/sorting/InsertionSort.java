@@ -1,5 +1,6 @@
 package sorting;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import util.ArrayHelper;
 
@@ -12,6 +13,9 @@ import java.util.Comparator;
 
 @Component
 public class InsertionSort {
+    @Autowired
+    ArrayHelper arrayHelper;
+
     public int[] sortDown(int[] array) {
         return sort(
                 array,
@@ -29,7 +33,7 @@ public class InsertionSort {
     int[] sort(int[] array, Comparator<Integer> comparator) {
         if (array.length <= 0) return array;
 
-        ArrayHelper.print(array);
+        arrayHelper.print(array);
 
         int i = 0;
 
@@ -42,7 +46,7 @@ public class InsertionSort {
                     array[j+1] = array[j];
                     array[j] = currentElement;
 
-                    ArrayHelper.print(array);
+                    arrayHelper.print(array);
                 }
 
                 j--;

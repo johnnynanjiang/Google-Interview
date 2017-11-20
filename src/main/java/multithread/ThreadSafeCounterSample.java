@@ -3,6 +3,7 @@ package multithread;
 /**
  * Created by nanjiang on 19/11/17.
  */
+
 public class ThreadSafeCounterSample {
     public static void main(String[] args) {
         ThreadSafeCounter sharedCounter = new ThreadSafeCounter();

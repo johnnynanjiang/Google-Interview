@@ -11,7 +11,7 @@ import sorting.InsertionSort;
  */
 
 @Configuration
-@ComponentScan(basePackages = "sorting")
+@ComponentScan({"sorting", "search", "util"})
 public class AppConfig {
 
 }
