@@ -9,6 +9,7 @@ import java.util.Comparator;
 /**
  * Created by nanjiang on 15/11/17.
  */
+
 @Component
 public class InsertionSort {
     public int[] sortDown(int[] array) {
