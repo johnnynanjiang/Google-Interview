@@ -1,15 +1,16 @@
 package sorting;
 
-import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import util.BaseTest;
 
 import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by nanjiang on 15/11/17.
  */
-public class InsertionSortTest {
+public class InsertionSortTest extends BaseTest {
     @Test
     public void testInsertionSortUp() {
         assertEquals(
