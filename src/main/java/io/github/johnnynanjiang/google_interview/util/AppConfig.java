@@ -1,4 +1,4 @@
-package util;
+package io.github.johnnynanjiang.google_interview.util;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ComponentScan({"sorting", "search", "util"})
+@ComponentScan({"io.github.johnnynanjiang.google_interview"})
 public class AppConfig {
 
 }

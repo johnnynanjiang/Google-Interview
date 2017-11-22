@@ -1,8 +1,8 @@
-package search;
+package io.github.johnnynanjiang.google_interview.search;
 
+import io.github.johnnynanjiang.google_interview.util.ArrayHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import util.ArrayHelper;
 
 /**
  * Created by nanjiang on 16/11/17.

@@ -1,4 +1,4 @@
-package multithread;
+package io.github.johnnynanjiang.google_interview.multithread;
 
 /**
  * Created by nanjiang on 19/11/17.

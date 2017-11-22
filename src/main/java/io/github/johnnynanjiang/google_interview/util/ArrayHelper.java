@@ -1,4 +1,4 @@
-package util;
+package io.github.johnnynanjiang.google_interview.util;
 
 import org.springframework.stereotype.Component;
 

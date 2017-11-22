@@ -1,4 +1,4 @@
-package sorting;
+package io.github.johnnynanjiang.google_interview.sorting;
 
 import org.springframework.stereotype.Component;
 

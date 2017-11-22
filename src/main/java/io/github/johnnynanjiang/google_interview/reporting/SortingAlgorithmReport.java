@@ -1,4 +1,4 @@
-package reporting;
+package io.github.johnnynanjiang.google_interview.reporting;
 
 /**
  * Created by nanjiang on 19/11/17.

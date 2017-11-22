@@ -1,5 +1,6 @@
-package util;
+package io.github.johnnynanjiang.google_interview.util;
 
+import io.github.johnnynanjiang.google_interview.util.AppConfig;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;

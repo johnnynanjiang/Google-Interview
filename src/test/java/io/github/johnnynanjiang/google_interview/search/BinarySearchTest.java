@@ -1,8 +1,8 @@
-package search;
+package io.github.johnnynanjiang.google_interview.search;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import util.BaseTest;
+import io.github.johnnynanjiang.google_interview.util.BaseTest;
 
 import static org.junit.Assert.assertEquals;
 
