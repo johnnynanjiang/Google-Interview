@@ -1,7 +1,6 @@
+[Design TinyURL @ leetcode.com](https://leetcode.com/problems/design-tinyurl):  30m
 
-https://leetcode.com/
-problems/
-add-two-numbers:    60m
+[Add Two Number @ leetcode.com](https://leetcode.com/problems/add-two-numbers): 90m
 
 ---
 
@@ -11,7 +10,7 @@ Linked list:        30m
 
 Infix to Postfix
 expression and 
-evaluation:         
+evaluation:         10m
 
 ---
 
