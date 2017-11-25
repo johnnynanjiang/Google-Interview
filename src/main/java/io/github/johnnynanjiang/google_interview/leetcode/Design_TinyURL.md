@@ -11,21 +11,20 @@ pow(10+26+26, 6)
 pros
 
 1. quick to allocate new identifier
-2. quick to search
+2. quick for random access(search by key)
 
 cons
 
-1. the counter would be hard to maintain in concurrent and distributed environment
+1. the incrementer would be hard to maintain in concurrent and distributed environment
 
 ##### ii. non-increment
 
 pros
 
 1. easy to scale in concurrent and distributed environment
+2. quick for random access(search by key using hashing)
 
 cons
-
-1. slow to allocate new identifier due to duplicate check
 
 ---
 
