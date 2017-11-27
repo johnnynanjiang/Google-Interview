@@ -25,7 +25,7 @@ Binary search:      30m
 
 ---
 
-Quick sort:         120m
+Quick sort:         150m
 
 Selection sort:     30m
 

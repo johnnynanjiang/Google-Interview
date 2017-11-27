@@ -38,19 +38,24 @@ public class QuickSort {
 
     int sort(int[] array, int lowIndex, int highIndex) {
         int pivotIndex = highIndex;
+        int startIndex = lowIndex;
 
-        for (int i = lowIndex; i < highIndex; i++) {
-            if (comparator.compare(array[i], array[pivotIndex]) > 0 ) {
+        while (startIndex < pivotIndex) {
+            if (comparator.compare(array[startIndex], array[pivotIndex]) > 0) {
                 int tmp = array[pivotIndex - 1];
                 array[pivotIndex - 1] = array[pivotIndex];
                 array[pivotIndex] = tmp;
 
-                tmp = array[i];
-                array[i] = array[pivotIndex];
-                array[pivotIndex] = tmp;
+                if (pivotIndex - startIndex > 1) {
+                    tmp = array[startIndex];
+                    array[startIndex] = array[pivotIndex];
+                    array[pivotIndex] = tmp;
+                }
 
                 pivotIndex = pivotIndex - 1;
-                i = i + 1;
+
+            } else {
+                startIndex = startIndex + 1;
             }
 
             arrayHelper.print(array);
