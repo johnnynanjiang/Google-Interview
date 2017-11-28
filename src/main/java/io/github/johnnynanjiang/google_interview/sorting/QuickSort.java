@@ -1,8 +1,11 @@
 package io.github.johnnynanjiang.google_interview.sorting;
 
+import io.github.johnnynanjiang.google_interview.util.AppConfig;
 import io.github.johnnynanjiang.google_interview.util.ArrayHelper;
 import io.github.johnnynanjiang.google_interview.util.Comparator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
 
 /**
@@ -20,23 +23,23 @@ public class QuickSort {
         return sort(array, Comparator.SORT_ASCEND);
     }
 
-    int[] sort(int[] array, java.util.Comparator<Integer> comparator) {
+    private int[] sort(int[] array, java.util.Comparator<Integer> comparator) {
         arrayHelper.print(array);
         this.comparator = comparator;
         partition(array, 0, array.length - 1);
         return array;
     }
 
-    void partition(int[] array, int lowIndex, int highIndex) {
+    private void partition(int[] array, int lowIndex, int highIndex) {
         if (highIndex <= lowIndex) return;
 
-        int pivotIndex = sort(array, lowIndex, highIndex);
+        int pivotIndex = sortAndSwap(array, lowIndex, highIndex);
 
         partition (array, lowIndex, pivotIndex - 1);
         partition (array, pivotIndex + 1, highIndex);
     }
 
-    int sort(int[] array, int lowIndex, int highIndex) {
+    private int sortAndSwap(int[] array, int lowIndex, int highIndex) {
         int pivotIndex = highIndex;
         int startIndex = lowIndex;
 
@@ -62,5 +65,11 @@ public class QuickSort {
         }
 
         return pivotIndex;
+    }
+
+    public static void main(String[] args) {
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        QuickSort quickSort = context.getBean(QuickSort.class);
+        quickSort.sortUp(new int[] {3, 2, 1});
     }
 }
