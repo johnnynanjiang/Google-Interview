@@ -4,7 +4,6 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.JoinPoint;
 import org.springframework.stereotype.Component;
 
@@ -17,16 +16,19 @@ import java.util.Date;
 @Component
 @Aspect
 public class AlgorithmPerformanceAspect {
-    @After("execution(* io.github.johnnynanjiang.google_interview.sorting..*(..))")
-    protected void logAfter(JoinPoint joinPoint) {
+    final String EXECUTION_PATTERN = "execution(* io.github.johnnynanjiang.google_interview.sorting..*(..))";
+
+    @After(EXECUTION_PATTERN)
+    protected void cutAfter(JoinPoint joinPoint) {
         printMessage("After", joinPoint);
     }
 
-    //@Around("execution(* io.github.johnnynanjiang.google_interview.sorting..*(..))")
-    public void userAdvice(ProceedingJoinPoint joinPoint) throws Throwable{
+    @Around(EXECUTION_PATTERN)
+    public Object cutAround(ProceedingJoinPoint joinPoint) throws Throwable{
         printMessage("Around before ", joinPoint, "timestamp:" + new Date());
-        joinPoint.proceed();
+        Object result = joinPoint.proceed();
         printMessage("Around after ", joinPoint, "timestamp:" + new Date());
+        return result;
     }
 
     private void printMessage(String pointcut, JoinPoint joinPoint) {
@@ -35,7 +37,7 @@ public class AlgorithmPerformanceAspect {
 
     private void printMessage(String pointcut, JoinPoint joinPoint, String message) {
         System.out.println(
-                String.format("*** @%s: %s.%s(), %s",
+                String.format("*** @%s: %s.%s()\n%s",
                         pointcut,
                         joinPoint.getSignature().getDeclaringTypeName(),
                         joinPoint.getSignature().getName(),
