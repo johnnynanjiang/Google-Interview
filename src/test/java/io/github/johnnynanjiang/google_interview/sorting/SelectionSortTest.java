@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Created by nanjiang on 19/11/17.
  */
+
 public class SelectionSortTest extends BaseTest {
     @Autowired
     SelectionSort selectionSort;

@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by nanjiang on 16/11/17.
  */
+
 public class BinarySearchTest extends BaseTest {
     @Autowired
     BinarySearch binarySearch;

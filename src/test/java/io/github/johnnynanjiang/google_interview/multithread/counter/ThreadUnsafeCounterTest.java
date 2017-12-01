@@ -1,4 +1,4 @@
-package io.github.johnnynanjiang.google_interview.multithread;
+package io.github.johnnynanjiang.google_interview.multithread.counter;
 
 import org.junit.Test;
 
@@ -8,17 +8,17 @@ import static org.junit.Assert.*;
  * Created by nanjiang on 1/12/17.
  */
 
-public class ThreadSafeCounterTest {
+public class ThreadUnsafeCounterTest {
     @Test
     public void test() throws InterruptedException {
         final long loopCount = 1000000;
 
-        ThreadSafeCounter sharedCounter = new ThreadSafeCounter();
+        ThreadUnsafeCounter sharedCounter = new ThreadUnsafeCounter();
 
         Thread thread1 = new Thread() {
             public void run() {
                 for (int i = 0; i < loopCount; i++) {
-                    System.out.println(sharedCounter.getCount());
+                    System.out.println(sharedCounter.increaseCount());
                 }
             }
         };
@@ -26,7 +26,7 @@ public class ThreadSafeCounterTest {
         Thread thread2 = new Thread() {
             public void run() {
                 for (int i = 0; i < loopCount; i++) {
-                    System.out.println(sharedCounter.getCount());
+                    System.out.println(sharedCounter.increaseCount());
                 }
             }
         };
@@ -38,8 +38,8 @@ public class ThreadSafeCounterTest {
         thread2.join();
 
         assertTrue(
-                "Should be exactly 2*loopCount",
-                sharedCounter.count == 2*loopCount
+                "Should be less than 2*loopCount due to concurrency issue",
+                sharedCounter.getCount() < 2*loopCount
         );
     }
 }

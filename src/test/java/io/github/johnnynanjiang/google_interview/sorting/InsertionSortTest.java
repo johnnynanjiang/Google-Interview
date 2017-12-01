@@ -13,7 +13,6 @@ import static org.junit.Assert.assertEquals;
  * Created by nanjiang on 15/11/17.
  */
 
-@Component
 public class InsertionSortTest extends BaseTest {
     @Autowired
     InsertionSort insertionSort;

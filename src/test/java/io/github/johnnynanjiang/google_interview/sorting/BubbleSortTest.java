@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Created by nanjiang on 17/11/17.
  */
+
 public class BubbleSortTest extends BaseTest {
     @Autowired
     BubbleSort bubbleSort;

@@ -12,6 +12,7 @@ import static org.junit.Assert.assertNull;
 /**
  * Created by nanjiang on 17/11/17.
  */
+
 public class MergeSortTest extends BaseTest {
     @Autowired
     MergeSort mergeSort;

@@ -1,7 +1,9 @@
 
-Spring AOP:             120m
+Spring AOP:             150m
 
 ---
+
+Multi-thread:       120m
 
 Distributed systems:    60m
 
@@ -36,8 +38,6 @@ Selection sort:     30m
 Merge sort:         180m
 
 Bubble sort:        40m
-
-Multi-thread:       90m
 
 Insertion sort:     30m
 
