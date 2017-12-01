@@ -6,26 +6,21 @@ import io.github.johnnynanjiang.google_interview.util.Print;
  * Created by nanjiang on 1/12/17.
  */
 
-public class NoVisibility {
-    boolean readyToReadTheNumber;
-    int number;
+public class NoVisibility extends Thread {
+    boolean keepRunning = true;
 
-    public void go() throws InterruptedException {
-        new ReaderThread().start();
-
+    public static void main(String[] args) throws InterruptedException {
+        NoVisibility thread = new NoVisibility();
+        thread.start();
         Thread.sleep(5000);
-
-        readyToReadTheNumber = true;
-        number = 2;
+        thread.keepRunning = false;
     }
 
-    class ReaderThread extends Thread {
-        public void run() {
-            while (!readyToReadTheNumber) {
-                Print.toConsole("Not ready to read yet...");
-                this.yield();
-            }
-            Print.toConsole("Read the value of the number: %d", number);
+    public void run() {
+        int i = 0;
+        while (keepRunning) {
+            Print.toConsole("Keep running %d ...", i++);
         }
+        Print.toConsole("Stopped running ***");
     }
 }
