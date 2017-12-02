@@ -7,20 +7,27 @@ import io.github.johnnynanjiang.google_interview.util.Print;
  */
 
 public class NoVisibility extends Thread {
-    boolean keepRunning = true;
+    private static boolean stopRunning;
 
     public static void main(String[] args) throws InterruptedException {
         NoVisibility thread = new NoVisibility();
         thread.start();
-        Thread.sleep(5000);
-        thread.keepRunning = false;
+
+        Thread.sleep(2000);
+
+        stopRunning = true;
+        Print.toConsole("Code execution: thread.stopRunning = true;");
     }
 
     public void run() {
         int i = 0;
-        while (keepRunning) {
+        while (true) {
             Print.toConsole("Keep running %d ...", i++);
+
+            if (stopRunning) {
+                Print.toConsole("Stopped running ***");
+                break;
+            }
         }
-        Print.toConsole("Stopped running ***");
     }
 }
