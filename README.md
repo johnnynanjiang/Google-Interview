@@ -3,7 +3,7 @@ Spring AOP:             150m
 
 ---
 
-Multi-thread:       120m
+Multi-thread:           150m
 
 Distributed systems:    60m
 
@@ -15,7 +15,7 @@ Distributed systems:    60m
 
 ---
 
-Hash tables:        30m
+Hash set/map/table: 120m
 
 Linked list:        30m      
 
