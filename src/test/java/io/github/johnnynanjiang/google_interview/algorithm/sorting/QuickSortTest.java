@@ -1,8 +1,6 @@
-package io.github.johnnynanjiang.google_interview.sorting;
+package io.github.johnnynanjiang.google_interview.algorithm.sorting;
 
 import io.github.johnnynanjiang.google_interview.util.BaseTest;
-import io.github.johnnynanjiang.google_interview.util.Comparator;
-import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

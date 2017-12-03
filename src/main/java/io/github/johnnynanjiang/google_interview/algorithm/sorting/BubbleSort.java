@@ -1,4 +1,4 @@
-package io.github.johnnynanjiang.google_interview.sorting;
+package io.github.johnnynanjiang.google_interview.algorithm.sorting;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package io.github.johnnynanjiang.google_interview.search;
+package io.github.johnnynanjiang.google_interview.algorithm.search;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

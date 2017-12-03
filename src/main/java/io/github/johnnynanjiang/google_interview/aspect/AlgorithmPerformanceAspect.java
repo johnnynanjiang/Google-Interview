@@ -16,7 +16,7 @@ import java.util.Date;
 @Component
 @Aspect
 public class AlgorithmPerformanceAspect {
-    final String EXECUTION_PATTERN = "execution(* io.github.johnnynanjiang.google_interview.sorting..*(..))";
+    final String EXECUTION_PATTERN = "execution(* io.github.johnnynanjiang.google_interview.algorithm.sorting..*(..))";
 
     @After(EXECUTION_PATTERN)
     protected void cutAfter(JoinPoint joinPoint) {
