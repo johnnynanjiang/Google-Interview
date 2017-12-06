@@ -3,7 +3,7 @@ Spring AOP:             150m
 
 ---
 
-Multi-thread:           150m
+Multi-thread & concurrency: 210m
 
 Distributed systems:    60m
 

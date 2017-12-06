@@ -5,6 +5,8 @@ package io.github.johnnynanjiang.google_interview.util;
  */
 public class Print {
     public static void toConsole(String format, Object... objects) {
-        System.out.println(String.format(format, objects));
+        synchronized (Print.class) {
+            System.out.println(String.format(format, objects));
+        }
     }
 }
