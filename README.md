@@ -1,11 +1,22 @@
-
-Spring AOP:             150m
+Android:    30m
 
 ---
 
-Multi-thread & concurrency: 210m
+Closure:
 
-Distributed systems:    60m
+---
+
+Lambda:
+
+---
+
+AOP:        150m
+
+---
+
+Multi-thread & concurrency: 240m
+
+Distributed systems:        60m
 
 ---
 
