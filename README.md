@@ -1,22 +1,28 @@
-Android:    30m
+Android:                30m
+
+Android Concurrency:    60m
 
 ---
 
-Closure:
+Java Generics:          60m
 
 ---
 
-Lambda:
+Java Closure:
 
 ---
 
-AOP:        150m
+Java Lambda:            30m
 
 ---
 
-Multi-thread & concurrency: 240m
+Java AOP:               150m
 
-Distributed systems:        60m
+---
+
+Concurrency:            240m
+
+Distributed systems:    60m
 
 ---
 
