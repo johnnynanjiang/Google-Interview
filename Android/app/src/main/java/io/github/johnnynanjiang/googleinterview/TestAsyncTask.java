@@ -2,6 +2,7 @@ package io.github.johnnynanjiang.googleinterview;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 
 /**
@@ -11,6 +12,7 @@ import android.os.AsyncTask;
 public class TestAsyncTask extends AsyncTask<Void, String, Void> {
     Context context;
     ProgressDialog progressDialog;
+    boolean cancel = false;
 
     public TestAsyncTask(Context context) {
         this.context = context;
@@ -19,6 +21,11 @@ public class TestAsyncTask extends AsyncTask<Void, String, Void> {
     @Override
     protected Void doInBackground(Void... values) {
         for (int i = 1; i <= 10000; i++) {
+            if (cancel) {
+                System.out.println(String.format("TestAsyncTask.doInBackground() cancelled"));
+                break;
+            }
+
             String msg = String.format("TestAsyncTask.doInBackground() #%d", i);
             publishProgress(msg);
             System.out.println(msg);
@@ -29,9 +36,16 @@ public class TestAsyncTask extends AsyncTask<Void, String, Void> {
 
     @Override
     protected void onPreExecute() {
-        progressDialog = ProgressDialog.show(
-            this.context, "Progress", "Message"
-        );
+        progressDialog = new ProgressDialog(context);
+        progressDialog.setTitle("Progress");
+        progressDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        cancel = true;
+                    }
+        });
+        progressDialog.show();
     }
 
     @Override
