@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "io.github.johnnynanjiang.googleinterview"
+        applicationId "io.github.johnnynanjiang.google_interview"
         minSdkVersion 23
         targetSdkVersion 26
         versionCode 1

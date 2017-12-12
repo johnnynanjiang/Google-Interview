@@ -1,4 +1,4 @@
-package io.github.johnnynanjiang.googleinterview
+package io.github.johnnynanjiang.google_interview
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package io.github.johnnynanjiang.googleinterview;
+package io.github.johnnynanjiang.google_interview;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -38,6 +38,7 @@ public class TestAsyncTask extends AsyncTask<Void, String, Void> {
     protected void onPreExecute() {
         progressDialog = new ProgressDialog(context);
         progressDialog.setTitle("Progress");
+        progressDialog.setCanceledOnTouchOutside(false);
         progressDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel",
                 new DialogInterface.OnClickListener() {
                     @Override

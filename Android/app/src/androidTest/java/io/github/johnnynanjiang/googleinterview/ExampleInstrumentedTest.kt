@@ -1,4 +1,4 @@
-package io.github.johnnynanjiang.googleinterview
+package io.github.johnnynanjiang.google_interview
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("io.github.johnnynanjiang.googleinterview", appContext.packageName)
+        assertEquals("io.github.johnnynanjiang.google_interview", appContext.packageName)
     }
 }
