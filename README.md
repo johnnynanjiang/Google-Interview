@@ -1,4 +1,4 @@
-Android:                30m
+Android:                90m
 
 Android Concurrency:    60m
 
