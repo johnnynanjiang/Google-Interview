@@ -1,4 +1,4 @@
-package io.github.johnnynanjiang.google_interview;
+package io.github.johnnynanjiang.google_interview.test;
 
 import android.app.ProgressDialog;
 import android.content.Context;
