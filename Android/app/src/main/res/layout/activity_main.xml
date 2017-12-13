@@ -30,8 +30,13 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Looper &amp; Hanlder"
-            android:id="@+id/button_looper_and_handler" />
+            android:text="Looper &amp; Hanlder 1"
+            android:id="@+id/button_looper_and_handler_1" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Looper &amp; Hanlder 2"
+            android:id="@+id/button_looper_and_handler_2" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

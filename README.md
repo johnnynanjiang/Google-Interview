@@ -1,6 +1,8 @@
-Android:                90m
+Android:            90m
 
-Android Concurrency:    60m
+Concurrency:        60m
+
+Looper & Handler:   120m
 
 ---
 
