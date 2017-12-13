@@ -1,24 +1,21 @@
-Android:            90m
+###Android
 
+General:            90m
 Concurrency:        60m
 
 Looper & Handler:   120m
 
 ---
 
-Java Generics:          60m
+###Java
 
----
+Generics:   60m
 
-Java Closure:
+Closure:
 
----
+Lambda:     30m
 
-Java Lambda:            30m
-
----
-
-Java AOP:               150m
+AOP:        150m
 
 ---
 
@@ -28,11 +25,17 @@ Distributed systems:    60m
 
 ---
 
+###leetcode.com
+
 [Design TinyURL @ leetcode.com](https://leetcode.com/problems/design-tinyurl):  30m
 
 [Add Two Number @ leetcode.com](https://leetcode.com/problems/add-two-numbers): 90m
 
 ---
+
+###Data structure
+
+Binary tree:        150m
 
 Hash set/map/table: 120m
 
@@ -40,15 +43,13 @@ Linked list:        30m
 
 ---
 
-Infix to Postfix
-expression and 
-evaluation:         10m
-
----
+###Search algorithm
 
 Binary search:      30m
 
 ---
+
+###Sort algorithm
 
 Quick sort:         150m
 
