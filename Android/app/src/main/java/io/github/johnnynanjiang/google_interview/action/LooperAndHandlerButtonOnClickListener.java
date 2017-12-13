@@ -23,16 +23,11 @@ public class LooperAndHandlerButtonOnClickListener implements View.OnClickListen
         handler.post(new Runnable() {
             @Override
             public void run() {
-                try {
-                    for (int i = 1; i <= loopCount; i++) {
-                        Thread.sleep(10);
-                        Print.toConsole(
-                                "Thread #%d looping %d/%d...",
-                                Thread.currentThread().getId(), i, loopCount
-                        );
-                    }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                for (int i = 1; i <= loopCount; i++) {
+                    Print.toConsole(
+                        "Thread #%d looping %d/%d...",
+                        Thread.currentThread().getId(), i, loopCount
+                    );
                 }
             }
         });

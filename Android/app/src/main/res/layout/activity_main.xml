@@ -37,6 +37,11 @@
             android:layout_height="wrap_content"
             android:text="Looper &amp; Hanlder 2"
             android:id="@+id/button_looper_and_handler_2" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Looper &amp; Hanlder Quit"
+            android:id="@+id/button_looper_and_handler_quit" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -3,6 +3,8 @@ package io.github.johnnynanjiang.google_interview.test;
 import android.os.Handler;
 import android.os.Looper;
 
+import io.github.johnnynanjiang.google_interview.util.Print;
+
 /**
  * Created by nanjiang on 12/12/17.
  */
@@ -28,5 +30,12 @@ public class TestHandlerThread extends Thread {
 
     public Handler getHandler() {
         return handler;
+    }
+
+    public void quit() {
+        if (Looper.myLooper() != null) {
+            Looper.myLooper().quit();
+            Print.toConsole("TestHandlerThread.quit()");
+        }
     }
 }
