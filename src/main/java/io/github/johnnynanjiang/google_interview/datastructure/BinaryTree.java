@@ -2,7 +2,10 @@ package io.github.johnnynanjiang.google_interview.datastructure;
 
 import io.github.johnnynanjiang.google_interview.util.Print;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 /**
  * Created by nanjiang on 8/12/17.
@@ -89,14 +92,50 @@ public class BinaryTree<T, U> {
 
     @Override
     public String toString() {
-        return printNodes(root);
+        return print();
     }
 
-    private String printNodes(Node... nodes) {
+    public String print() {
+        return printTree(Arrays.asList(root));
+    }
+
+    private String printTree(List<Node> nodes) {
+        List<Node> childNodes;
+        StringBuilder sb = new StringBuilder();
+
+        sb.append(printNodes(nodes));
+        childNodes = getChildNodes(nodes);
+
+        while (!childNodes.isEmpty()) {
+            sb.append(printNodes(childNodes));
+            childNodes = getChildNodes(childNodes);
+        }
+
+        return sb.toString();
+    }
+
+    private List<Node> getChildNodes(List<Node> nodes) {
+        List<Node> childNodes = new ArrayList<>();
+
+        for(Node node : nodes) {
+            if (node != null) {
+                childNodes.add(node.leftChild);
+                childNodes.add(node.rightChild);
+            }
+        }
+
+        return childNodes;
+    }
+
+    private String printNodes(List<Node> nodes) {
         StringBuilder sb = new StringBuilder();
 
         for(Node node : nodes) {
-            sb.append(Print.toString("(%s, %s)   ", node.key, node.content));
+            if (node == null) {
+                sb.append(Print.toString("(%s)   ", node));
+            } else {
+                sb.append(Print.toString("(%s, %s)   ", node.key, node.content));
+            }
         }
 
         sb.append("\n");

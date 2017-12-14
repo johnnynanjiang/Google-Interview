@@ -51,9 +51,17 @@ public class BinaryTreeTest {
     @Test
     public void testPrint() {
         binaryTree.insert(binaryTree.new Node("5", "content of 5"));
-        Print.toConsole(binaryTree.toString());
 
-        binaryTree.insert(binaryTree.new Node("1", "content of 1"));
+        binaryTree.insert(binaryTree.new Node("3", "content of 3"));
+        binaryTree.insert(binaryTree.new Node("7", "content of 7"));
+
+        binaryTree.insert(binaryTree.new Node("4", "content of 4"));
+
         binaryTree.insert(binaryTree.new Node("6", "content of 6"));
+        binaryTree.insert(binaryTree.new Node("8", "content of 8"));
+
+        binaryTree.insert(binaryTree.new Node("9", "content of 9"));
+
+        Print.toConsole(binaryTree.toString());
     }
 }
