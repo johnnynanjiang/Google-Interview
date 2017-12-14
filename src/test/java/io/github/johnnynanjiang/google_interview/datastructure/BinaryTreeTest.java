@@ -48,20 +48,58 @@ public class BinaryTreeTest {
         binaryTree.insert(binaryTree.new Node("key1", "content1"));
     }
 
-    @Test
-    public void testPrint() {
-        binaryTree.insert(binaryTree.new Node("5", "content of 5"));
+    BinaryTree setUpAInDepthBinaryTree() {
+        binaryTree = new BinaryTree(comparator);
 
+        binaryTree.insert(binaryTree.new Node("5", "content of 5"));
         binaryTree.insert(binaryTree.new Node("3", "content of 3"));
         binaryTree.insert(binaryTree.new Node("7", "content of 7"));
-
         binaryTree.insert(binaryTree.new Node("4", "content of 4"));
-
         binaryTree.insert(binaryTree.new Node("6", "content of 6"));
         binaryTree.insert(binaryTree.new Node("8", "content of 8"));
-
         binaryTree.insert(binaryTree.new Node("9", "content of 9"));
 
+        return binaryTree;
+    }
+
+    @Test
+    public void testPrint() {
+        binaryTree = setUpAInDepthBinaryTree();
         Print.toConsole(binaryTree.toString());
+    }
+
+    @Test
+    public void testFind() {
+        binaryTree = setUpAInDepthBinaryTree();
+
+        BinaryTree.Node node = binaryTree.find("5");
+
+        assertEquals("5", node.key);
+        assertEquals("content of 5", node.content);
+
+        node = binaryTree.find("NonExistKeny");
+
+        assertNull(node);
+    }
+
+    @Test
+    public void testHeightOfNode() {
+        binaryTree = setUpAInDepthBinaryTree();
+
+        BinaryTree.Node node = binaryTree.find("5");
+
+        assertEquals(3, binaryTree.getHeightOf(node));
+
+        node = binaryTree.find("7");
+
+        assertEquals(2, binaryTree.getHeightOf(node));
+
+        node = binaryTree.find("8");
+
+        assertEquals(1, binaryTree.getHeightOf(node));
+
+        node = binaryTree.find("9");
+
+        assertEquals(0, binaryTree.getHeightOf(node));
     }
 }

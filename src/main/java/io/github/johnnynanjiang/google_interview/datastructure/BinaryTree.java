@@ -131,15 +131,37 @@ public class BinaryTree<T, U> {
         StringBuilder sb = new StringBuilder();
 
         for(Node node : nodes) {
-            if (node == null) {
-                sb.append(Print.toString("(%s)   ", node));
-            } else {
-                sb.append(Print.toString("(%s, %s)   ", node.key, node.content));
-            }
+            sb.append(Print.toString("[%s]   ", node == null ? null : node.key));
         }
 
         sb.append("\n");
 
         return sb.toString();
+    }
+
+    public int getHeightOf(Node node) {
+        return getHeightOf(node, 0);
+    }
+
+    private int getHeightOf(Node node, int height) {
+        int leftHeight = 0, rightHeight = 0;
+
+        if (node == null) {
+            return height;
+        }
+
+        if (node.leftChild == null && node.rightChild == null) {
+            return height;
+        }
+
+        if (node.leftChild != null) {
+            leftHeight = getHeightOf(node.leftChild, height + 1);
+        }
+
+        if (node.rightChild != null) {
+            rightHeight = getHeightOf(node.rightChild, height + 1);
+        }
+
+        return (leftHeight > rightHeight) ? leftHeight : rightHeight;
     }
 }

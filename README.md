@@ -35,7 +35,7 @@ Distributed systems:    60m
 
 ###Data structure
 
-Binary tree:        180m
+Binary tree:        210m
 
 Hash set/map/table: 120m
 
