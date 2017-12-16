@@ -21,6 +21,9 @@ Concurrency:            270m
 
 Distributed systems:    60m
 
+Dynamic programming &
+Memoization:            30m
+
 ---
 
 ###leetcode.com

@@ -1,15 +1,17 @@
 package io.github.johnnynanjiang.google_interview.algorithm;
 
+import io.github.johnnynanjiang.google_interview.util.Print;
+
 /**
  * Created by nanjiang on 16/12/17.
  */
 public class Fibonacci {
-    public static int[] generate(int i) {
+    public static long[] generate(int i) {
         if (i<0) {
             return null;
         }
 
-        int[] result = new int[i];
+        long[] result = new long[i];
 
         if (i==0) {
             return result;
@@ -39,6 +41,7 @@ public class Fibonacci {
             return 1;
         }
 
+        Print.toConsole("Fibonacci.getLastOne(%d)", n);
         return getLastOne(n-2) + getLastOne(n-1);
     }
 

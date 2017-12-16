@@ -16,6 +16,12 @@ public class ArrayHelper {
         return result;
     }
 
+    public String print(long[] array) {
+        String result = Arrays.toString(array);
+        System.out.println(result);
+        return result;
+    }
+
     public String print(Object[] array) {
         String result = Arrays.toString(array);
         System.out.println(result);

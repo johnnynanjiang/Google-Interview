@@ -17,7 +17,8 @@ public class FibonacciTest extends BaseTest {
 
     @Test
     public void testGetLastNumber() {
-        arrayHelper.print(Fibonacci.generate(6));
-        assertEquals(8, Fibonacci.getLastOne(6));
+        arrayHelper.print(Fibonacci.generate(7));
+        assertEquals(13, Fibonacci.getLastOne(7));
+        //increase from 7 to 70 will significantly reduce the performance on recursive getLastOne()
     }
 }
