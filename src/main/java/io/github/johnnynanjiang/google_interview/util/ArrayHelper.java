@@ -10,11 +10,15 @@ import java.util.Arrays;
 
 @Component
 public class ArrayHelper {
-    public void print(int[] array) {
-        System.out.println(Arrays.toString(array));
+    public String print(int[] array) {
+        String result = Arrays.toString(array);
+        System.out.println(result);
+        return result;
     }
 
-    public void print(Object[] array) {
-        System.out.println(Arrays.toString(array));
+    public String print(Object[] array) {
+        String result = Arrays.toString(array);
+        System.out.println(result);
+        return result;
     }
 }
