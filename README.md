@@ -17,9 +17,7 @@ Lambda:     30m
 
 AOP:        150m
 
----
-
-Concurrency:            240m
+Concurrency:            270m
 
 Distributed systems:    60m
 
@@ -35,7 +33,7 @@ Distributed systems:    60m
 
 ###Data structure
 
-Binary tree:        210m
+Binary tree:        240m
 
 Hash set/map/table: 120m
 
