@@ -9,6 +9,7 @@ import java.util.Map;
  * Created by nanjiang on 16/12/17.
  */
 
+//Top-down solution
 public class FibonacciV2 {
     private static Map<Integer, Long> cachedResults = new HashMap<>();
 

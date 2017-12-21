@@ -16,14 +16,18 @@ public class FibonacciTest extends BaseTest {
     }
 
     @Test
-    public void testGetLastNumber() {
-        arrayHelper.print(Fibonacci.generate(7));
+    public void testGetLastNumberRecursiveVersion() {
         assertEquals(832040, Fibonacci.getLastOne(30));
         //increase from 7 to 25 will significantly reduce the performance on recursive getLastOne()
     }
 
     @Test
-    public void testGetLastNumberDynamicProgrammingVersion() {
+    public void testGetLastNumberDynamicProgrammingTopDownVersion() {
         assertEquals(832040, FibonacciV2.getLastOne(30));
+    }
+
+    @Test
+    public void testGetLastNumberDynamicProgrammingBottomUpVersion() {
+        assertEquals(832040, FibonacciV3.getLastOne(30));
     }
 }
