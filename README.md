@@ -1,6 +1,7 @@
 ###Android
 
 General:            90m
+
 Concurrency:        60m
 
 Looper & Handler:   120m
@@ -21,8 +22,8 @@ Concurrency:            270m
 
 Distributed systems:    60m
 
-Dynamic programming &
-Memoization:            30m
+Dynamic programming
+& Memoization:          90m
 
 ---
 
@@ -41,6 +42,8 @@ Binary tree:        240m
 Hash set/map/table: 120m
 
 Linked list:        30m      
+
+Graph:              60m
 
 ---
 

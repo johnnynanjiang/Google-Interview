@@ -1,10 +1,11 @@
-package io.github.johnnynanjiang.google_interview.algorithm;
+package io.github.johnnynanjiang.google_interview.dynamicprogramming;
 
 import io.github.johnnynanjiang.google_interview.util.Print;
 
 /**
  * Created by nanjiang on 16/12/17.
  */
+
 public class Fibonacci {
     public static long[] generate(int i) {
         if (i<0) {
@@ -37,12 +38,12 @@ public class Fibonacci {
     }
 
     public static long getLastOne(int n) {
+        Print.toConsole("%s.getLastOne(%d)", Fibonacci.class.getSimpleName(), n);
+
         if (n < 3) {
             return 1;
         }
 
-        Print.toConsole("Fibonacci.getLastOne(%d)", n);
         return getLastOne(n-2) + getLastOne(n-1);
     }
-
 }
