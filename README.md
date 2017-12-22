@@ -43,7 +43,13 @@ Hash set/map/table: 120m
 
 Linked list:        30m      
 
-Graph:              60m
+Graph:              90m
+
+---
+
+Dijkstra's algorithm:   60m
+
+Priority queue:
 
 ---
 
