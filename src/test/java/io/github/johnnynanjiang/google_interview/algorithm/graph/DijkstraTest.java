@@ -16,7 +16,14 @@ import static org.junit.Assert.*;
 
 public class DijkstraTest {
     @Test
-    public void test() {
+    public void testGetShortestDistances() {
+        Graph graph = GraphTest.graph;
+
+        assertEquals("{a=0, b=3, c=5, d=5, e=11, f=8, g=9}", Dijkstra.getShortestDistances(graph, graph.getVertex("a"), graph.getVertex("g")).toString());
+    }
+
+    @Test
+    public void testGetShortestPath() {
         Graph graph = GraphTest.graph;
 
         List<Vertex> path = Dijkstra.getShortestPath(graph, graph.getVertex("a"), graph.getVertex("g"));
@@ -27,5 +34,4 @@ public class DijkstraTest {
         assertEquals("f", path.get(2).getId());
         assertEquals("g", path.get(3).getId());
     }
-
 }
