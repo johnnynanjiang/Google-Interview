@@ -50,7 +50,7 @@ Graph               90m
 
 ---
 
-Dijkstra's algorithm    120m
+Dijkstra's algorithm    180m
 
 ---
 

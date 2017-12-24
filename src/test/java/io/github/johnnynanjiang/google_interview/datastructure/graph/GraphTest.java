@@ -49,4 +49,15 @@ public class GraphTest {
         assertEquals("g", graph.getVertex("g").getId());
         assertEquals(null, graph.getVertex("NonExistentId"));
     }
+
+    @Test
+    public void testGetNeighbours() {
+        List<Vertex> neighbours = graph.getNeighbours(graph.getVertex("a"));
+
+        assertEquals(3, neighbours.size());
+        assertEquals("b", neighbours.stream().filter(v -> "b".equals(v.getId())).findFirst().orElse(null).getId());
+        assertEquals("c", neighbours.stream().filter(v -> "c".equals(v.getId())).findFirst().orElse(null).getId());
+        assertEquals("d", neighbours.stream().filter(v -> "d".equals(v.getId())).findFirst().orElse(null).getId());
+        assertNull(neighbours.stream().filter(v -> "e".equals(v.getId())).findFirst().orElse(null));
+    }
 }

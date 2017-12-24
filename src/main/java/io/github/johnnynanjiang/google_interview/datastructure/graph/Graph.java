@@ -5,6 +5,8 @@ package io.github.johnnynanjiang.google_interview.datastructure.graph;
  */
 
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Graph {
     private final List<Vertex> vertices;
@@ -25,5 +27,12 @@ public class Graph {
 
     public Vertex getVertex(String id) {
         return vertices.stream().filter(v -> id.equals(v.getId())).findFirst().orElse(null);
+    }
+
+    public List<Vertex> getNeighbours(Vertex vertex) {
+        return edges.stream().
+                filter(e -> e.getSource().equals(vertex) || e.getDestination().equals(vertex)).
+                map(e -> e.getSource().equals(vertex) ? e.getDestination() : e.getSource()).
+                collect(Collectors.toList());
     }
 }
