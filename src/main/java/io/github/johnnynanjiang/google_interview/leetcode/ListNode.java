@@ -1,7 +1,5 @@
 package io.github.johnnynanjiang.google_interview.leetcode;
 
-import java.util.Stack;
-
 /**
  * Created by nanjiang on 22/11/17.
  */

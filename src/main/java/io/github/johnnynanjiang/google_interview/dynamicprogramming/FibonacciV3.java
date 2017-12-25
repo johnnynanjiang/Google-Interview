@@ -2,9 +2,6 @@ package io.github.johnnynanjiang.google_interview.dynamicprogramming;
 
 import io.github.johnnynanjiang.google_interview.util.Print;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by nanjiang on 16/12/17.
  */

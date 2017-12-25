@@ -2,8 +2,6 @@ package io.github.johnnynanjiang.google_interview.leetcode;
 
 import org.springframework.stereotype.Component;
 
-import java.util.Stack;
-
 @Component
 public class AddTwoNumbers {
     public ListNode go(ListNode l1, ListNode l2) {
