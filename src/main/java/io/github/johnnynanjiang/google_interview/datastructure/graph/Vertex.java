@@ -2,7 +2,6 @@ package io.github.johnnynanjiang.google_interview.datastructure.graph;
 
 /**
  * Created by nanjiang on 22/12/17.
- * reference http://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html
  */
 
 public class Vertex {
