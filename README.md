@@ -1,3 +1,17 @@
+###Mathematics
+
+Discrete math
+
+Counting problems &
+probability problems
+
+Elementary probability theory & 
+combinatorics
+
+n-choose-k problems and their ilk
+
+---
+
 ###Android
 
 General             90m
@@ -18,7 +32,10 @@ Lambda      30m
 
 AOP         150m
 
-Concurrency             270m
+Concurrency             300m
+
+- [Locks](http://tutorials.jenkov.com/java-concurrency/locks.html)
+- [wait() and notify()](http://tutorials.jenkov.com/java-concurrency/thread-signaling.html)
 
 Distributed systems     60m
 
@@ -29,9 +46,8 @@ Dynamic programming
 
 ###leetcode.com
 
-[Design TinyURL @ leetcode.com](https //leetcode.com/problems/design-tinyurl)   30m
-
-[Add Two Number @ leetcode.com](https //leetcode.com/problems/add-two-numbers)  90m
+- [Design TinyURL @ leetcode.com](https://leetcode.com/problems/design-tinyurl)   30m
+- [Add Two Number @ leetcode.com](https://leetcode.com/problems/add-two-numbers)  90m
 
 ---
 
@@ -75,3 +91,9 @@ Insertion sort      30m
 ---
 
 Big O notation      60m
+
+---
+
+Google Interview Preparation Guide  120m
+
+- [How to: Work at Google — Candidate Coaching Session for Technical Interviewing](https://www.youtube.com/watch?v=oWbUtlUhwa8)
