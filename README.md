@@ -2,8 +2,14 @@
 
 Discrete math
 
-Counting problems &
-probability problems
+Counting problems   60m
+
+- [Discrete Mathematics - Counting Theory](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_counting_theory.htm)
+- [The number of words that can be made by permuting the letters ](https://math.stackexchange.com/questions/391833/the-number-of-words-that-can-be-made-by-permuting-the-letters-of-mathematics-i)
+
+probability problems 10m
+
+- [Discrete Mathematics - Probability](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_probability.htm)
 
 Elementary probability theory & 
 combinatorics
