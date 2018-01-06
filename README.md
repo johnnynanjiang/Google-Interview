@@ -2,17 +2,16 @@
 
 Discrete math
 
-Counting problems   60m
+Counting problems   90m
 
 - [Discrete Mathematics - Counting Theory](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_counting_theory.htm)
 - [The number of words that can be made by permuting the letters ](https://math.stackexchange.com/questions/391833/the-number-of-words-that-can-be-made-by-permuting-the-letters-of-mathematics-i)
+- [Combinatorics](https://mathigon.org/world/Combinatorics)
 
-probability problems 10m
+Probability problems 60m
 
 - [Discrete Mathematics - Probability](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_probability.htm)
-
-Elementary probability theory & 
-combinatorics
+- [Elementary probability theory, Bayes’ Theorem](https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1b-statistical-methods/elementary-probability-theory)
 
 n-choose-k problems and their ilk
 
