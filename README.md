@@ -1,3 +1,23 @@
+###System Design
+
+distributed systems, designing a system under certain constraints, simplicity, limitations, robustness and tradeoffs
+
+- [Distributed Systems and Parallel Computing](https://research.google.com/pubs/DistributedSystemsandParallelComputing.html)
+
+---
+
+###Operating Systems
+
+processes, threads, concurrency issues, locks, mutexes, semaphores, monitors
+
+deadlock, livelock
+
+context switching
+
+multi-core & "modern" concurrency constructs
+
+---
+
 ###Mathematics
 
 Discrete math
@@ -8,12 +28,10 @@ Counting problems   90m
 - [The number of words that can be made by permuting the letters ](https://math.stackexchange.com/questions/391833/the-number-of-words-that-can-be-made-by-permuting-the-letters-of-mathematics-i)
 - [Combinatorics](https://mathigon.org/world/Combinatorics)
 
-Probability problems 60m
+Probability problems 90m
 
 - [Discrete Mathematics - Probability](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_probability.htm)
 - [Elementary probability theory, Bayes’ Theorem](https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1b-statistical-methods/elementary-probability-theory)
-
-n-choose-k problems and their ilk
 
 ---
 
@@ -49,7 +67,7 @@ Dynamic programming
 
 ---
 
-###leetcode.com
+###leetcode.com (GitHub login)
 
 - [Design TinyURL @ leetcode.com](https://leetcode.com/problems/design-tinyurl)   30m
 - [Add Two Number @ leetcode.com](https://leetcode.com/problems/add-two-numbers)  90m
