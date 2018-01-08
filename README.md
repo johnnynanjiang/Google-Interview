@@ -1,6 +1,8 @@
 ###System Design
 
-distributed systems, designing a system under certain constraints, simplicity, limitations, robustness and tradeoffs
+Distributed systems     60m
+
+- Designing a system under certain constraints, simplicity, limitations, robustness and tradeoffs
 
 - [Distributed Systems and Parallel Computing](https://research.google.com/pubs/DistributedSystemsandParallelComputing.html)
 
@@ -8,7 +10,7 @@ distributed systems, designing a system under certain constraints, simplicity, l
 
 ###Operating Systems
 
-processes, threads, concurrency issues, locks, mutexes, semaphores, monitors
+processes, threads, concurrency issues
 
 deadlock, livelock
 
@@ -55,12 +57,14 @@ Lambda      30m
 
 AOP         150m
 
-Concurrency             300m
+Concurrency             360m
 
 - [Locks](http://tutorials.jenkov.com/java-concurrency/locks.html)
 - [wait() and notify()](http://tutorials.jenkov.com/java-concurrency/thread-signaling.html)
-
-Distributed systems     60m
+- [Difference between Lock, Mutex and Semaphore](https://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference)
+- [Difference between lock and monitor – Java Concurrency](https://howtodoinjava.com/core-java/multi-threading/multithreading-difference-between-lock-and-monitor/)
+- [Monitors (Locks and Conditions)](https://baptiste-wicht.com/posts/2010/09/java-concurrency-part-5-monitors-locks-and-conditions.html)
+- [Semaphores](https://baptiste-wicht.com/posts/2010/08/java-concurrency-part-4-semaphores.html)
 
 Dynamic programming
 & Memoization           90m
