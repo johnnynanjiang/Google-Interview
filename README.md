@@ -57,10 +57,11 @@ Lambda      30m
 
 AOP         150m
 
-Concurrency             360m
+Concurrency             390m
 
 - [Locks](http://tutorials.jenkov.com/java-concurrency/locks.html)
-- [wait() and notify()](http://tutorials.jenkov.com/java-concurrency/thread-signaling.html)
+- [Object.wait(), Object.notify() and Object.notifyAll()](http://tutorials.jenkov.com/java-concurrency/thread-signaling.html)
+- [Thread.join()](https://stackoverflow.com/questions/15956231/what-does-this-thread-join-code-mean)
 - [Difference between Lock, Mutex and Semaphore](https://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference)
 - [Difference between lock and monitor – Java Concurrency](https://howtodoinjava.com/core-java/multi-threading/multithreading-difference-between-lock-and-monitor/)
 - [Monitors (Locks and Conditions)](https://baptiste-wicht.com/posts/2010/09/java-concurrency-part-5-monitors-locks-and-conditions.html)
